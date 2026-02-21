@@ -32,7 +32,7 @@ struct SetLobby {
     std::vector<PrizepoolGridEntry> prizepool; // vector of a struct for prizepool
     std::vector<MultiDistrib> distrib; // vector of a struct for distribution prize
     
-    double sumProbabilities() const;
-    bool validate() const;
-    bool hasPayoutFor(int multiplier) const;
+    double sumProbabilities() const; // fonction qui comptabilise les probabilité
+    bool validate() const; // fonction qui check la validité de la struct
+    bool hasPayoutFor(int multiplier) const; // fonction qui verifie que le multiplier est aussi present dans prizepool
 };
